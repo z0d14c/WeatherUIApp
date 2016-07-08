@@ -12,10 +12,18 @@
   * Established libraries for running front-end tests.
 * Leaflet
   * Necessary for displaying maps.
+* Angular UI Router
+  * I like this
 
 ### Future Improvements
-* 
-
+* ES6 / Babel
+  * One of the highest priorities would be getting newer JavaScript features into the project.
+* LESS (Or SASS..)
+  * Using a CSS preprocessor would be necessary for keeping the CSS manageable. Ability to use variables and
+  functions etc. are necessary in almost anything that isn't a prototype over the long-term.
+* Packaging (Minification/uglification, optimization, etc.)
+  * As we think more about a production application, a packaging step would need to be implemented.
+  
 ## Instructions
 To install. (Need NPM and Bower, preferably latest stable versions)
 1. Clone project
