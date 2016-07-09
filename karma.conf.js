@@ -1,20 +1,22 @@
-//jshint strict: false
+var wiredep = require('wiredep');
+var config = require('./gulp.config')();
+var wiredepOptions = config.getWiredepDefaultOptions();
+wiredepOptions.devDependencies = true;
+var bowerFiles = wiredep(wiredepOptions)['js'];
 module.exports = function(config) {
   config.set({
 
-    basePath: './app',
+    basePath: './',
 
-    files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'components/**/*.js',
-      'view*/**/*.js'
-    ],
+    files: [].concat(
+        bowerFiles,
+      'app/**/*.module.js',
+      'app/**/*.js'
+    ),
 
     autoWatch: true,
 
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine-jquery', 'jasmine'],
 
     browsers: ['Chrome'],
 
@@ -22,6 +24,7 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-jasmine',
+        'karma-jasmine-jquery',
       'karma-junit-reporter'
     ],
 

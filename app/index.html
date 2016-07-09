@@ -30,7 +30,7 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <wui-header></wui-header>
-  <div ui-view></div>
+  <div id="maincontainer" class="container" ui-view></div>
 
   <!-- build:js js/lib.js -->
   <!-- bower:js -->
@@ -43,22 +43,24 @@
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js js/lib.js -->
   <!-- inject:js -->
   <script src="core/core.module.js"></script>
-  <script src="MainPage/main.module.js"></script>
   <script src="maps/map.module.js"></script>
+  <script src="mainPage/main.module.js"></script>
   <script src="app.js"></script>
   <script src="core/core.routerHelperProvider.js"></script>
   <script src="core/core.routes.js"></script>
   <script src="layout/header.directive.js"></script>
-  <script src="MainPage/main.controller.js"></script>
-  <script src="MainPage/main.routes.js"></script>
   <script src="maps/leaflet.constant.js"></script>
+  <script src="maps/map.resource.js"></script>
   <script src="maps/map.service.js"></script>
   <script src="maps/mapbox.constant.js"></script>
+  <script src="mainPage/main.controller.js"></script>
+  <script src="mainPage/main.routes.js"></script>
   <!-- endinject -->
   <!-- endbuild -->
   <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>

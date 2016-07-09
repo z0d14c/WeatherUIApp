@@ -1,1 +1,1 @@
-angular.module('app.maps', []);
+angular.module('app.maps', ['ngResource']);
