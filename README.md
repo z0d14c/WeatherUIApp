@@ -28,7 +28,7 @@ Simply type in a location address or name, select it, enter a date/time and view
     * main // main page files (this is the page you land on when you open the app)
     * weather // weather page files (the page that displays data for a selected location)
     * maps // map service files, logic concerning the map and related leaflet/mapbox data
-* e2e-tests // config for integration testing (currently unused) and mock data
+  * e2e-tests // config for integration testing (currently unused) and mock data
 
 ### Future Improvements
 * ES6 / Babel
@@ -42,11 +42,13 @@ Simply type in a location address or name, select it, enter a date/time and view
   * Enforcing a uniform and clean code style is easier if linting systems such as JSCS are 
   integrated in the project's scripting (i.e. runs when serving or testing).
 * error-handling and edge cases, validation
-  * It's pretty easy to break the app right now or do silly things -- e.g. not filling in a date/time.
-  A production app needs significantly more error-handling and such.
+  * It's pretty easy to break the app right now by doing silly/unexpected things -- e.g. not filling in a date/time.
+    A production app needs significantly more error-handling, validation, notification of bad input, etc.
  
 ## Instructions
 `this notation means run this command from root directory (unless another directory is specified)`
+* built on a system using node v4.4 *
+
 To install. (Need NPM and Bower, preferably latest stable versions)
 1. Clone project
 2. `npm install`
