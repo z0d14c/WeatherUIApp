@@ -7,7 +7,7 @@
         var dataFields = ['humidity', 'apparentTemperature', 'temperature',
         'precipProbability', 'summary'];
         var dataColumns = [
-            'Humidity', 'Apparent Temp.', 'Temp.', 'Precip. Prob.', 'Summary'
+            'Humidity', 'Apparent Temp. (F)', 'Temp. (F)', 'Precip. Prob.', 'Summary'
         ];
         /*
         * maps weather data from darksky to individual arrays

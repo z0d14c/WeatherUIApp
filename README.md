@@ -53,7 +53,7 @@ Simply type in a location address or name, select it, enter a date/time and view
 To install. (Need NPM and Bower, preferably latest stable versions)
 1. Clone project
 2. `npm install`
-  * Bower install should run as part of npm script, if it doesn't you should run that as well
+3. `bower install`
 
 To run. 
 1. `node server.js`
