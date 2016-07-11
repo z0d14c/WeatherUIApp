@@ -51,19 +51,23 @@ Simply type in a location address or name, select it, enter a date/time and view
 * built on a system using node v4.4 *
 
 To install. (Need NPM and Bower, preferably latest stable versions)
+
 1. Clone project
 2. `npm install`
 3. `bower install`
 
 To run. 
+
 1. `node server.js`
   * server will start on port 3000
 2. navigate from your web browser (modern Chrome/Firefox/Edge) to localhost:3000
 
 To test.
+
 1. `npm test`
 
 To build (wire up new css/js files, including Bower dependencies)
+
 1. `gulp build`
 
 ## Other materials
