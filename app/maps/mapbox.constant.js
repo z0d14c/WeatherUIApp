@@ -1,3 +1,4 @@
+(function(){
 // store mapbox config variables here
 angular.module('app.maps')
 .constant('mapbox', {
@@ -5,3 +6,4 @@ angular.module('app.maps')
         'apiID': 'z0d14c',
         'accessToken': 'pk.eyJ1IjoiejBkMTRjIiwiYSI6ImNpcWRjZ21hbTAyODhmdG5lbmFrYzgxdnEifQ.QDAfp8HdWxA1EzSMMDmrKw'
     });
+})();

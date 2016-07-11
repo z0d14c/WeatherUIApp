@@ -10,13 +10,14 @@ module.exports = function(config) {
 
     files: [].concat(
         bowerFiles,
-      'app/**/*.module.js',
+        'app/lib/*.js',
+        'app/**/*.module.js',
       'app/**/*.js'
     ),
 
     autoWatch: true,
 
-    frameworks: ['jasmine-jquery', 'jasmine'],
+    frameworks: ['jasmine-jquery', 'jasmine', 'sinon'],
 
     browsers: ['Chrome'],
 
@@ -24,6 +25,7 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-firefox-launcher',
       'karma-jasmine',
+        'karma-sinon',
         'karma-jasmine-jquery',
       'karma-junit-reporter'
     ],
