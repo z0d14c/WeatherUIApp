@@ -57,6 +57,7 @@ To install. (Need NPM and Bower, preferably latest stable versions)
 To run. 
 1. `node server.js`
   * server will start on port 3000
+2. navigate from your web browser (modern Chrome/Firefox/Edge) to localhost:3000
 
 To test.
 1. `npm test`
