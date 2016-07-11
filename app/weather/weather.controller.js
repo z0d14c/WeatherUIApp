@@ -2,8 +2,9 @@
     angular.module('app.weather')
         .controller('WeatherController', WeatherController);
 
-    WeatherController.$inject = ['locationInfo', 'WeatherService'];
-    function WeatherController(locationInfo, WeatherService) {
+    // locationInfo resolved from route
+    WeatherController.$inject = ['locationInfo', 'MapService', 'WeatherService'];
+    function WeatherController(locationInfo, MapService, WeatherService) {
         var vm = this;
         vm.data = locationInfo;
         vm.dayRange = _dayRange(24);
@@ -12,7 +13,7 @@
 
         // init function
         function activate() {
-            console.log('vm.data ', vm.data);
+            vm.location = MapService.getCurrentLocation();
         }
 
         // fix to create proper 24 hour range for data display

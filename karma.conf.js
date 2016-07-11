@@ -13,7 +13,9 @@ module.exports = function(config) {
         'app/**/*.module.js',
         'app/lib/leaflet.js',
         'app/app.js',
-      'app/**/*.js'
+      'app/**/*.js',
+        {pattern: './e2e-tests/data/*.json',
+            watched: true, served: true, included: false}
     ),
 
     autoWatch: true,

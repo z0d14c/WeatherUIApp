@@ -1,9 +1,12 @@
 <div>
-    
-    <div class="col-sm-12" id="chartcontainer"></div>
-    <span>{{weatherCtrl.tableConfig.fieldValues}}</span>
+    <div class="page-header">
+        <h1>Weather Data for {{weatherCtrl.location.name}} <small>Coordinates: {{weatherCtrl.location.long}},{{weatherCtrl.location.lat}}</small></h1>
+    </div>
+    <div class="col-sm-12" id="chartcontainer">
+        <wui-chart x="weatherCtrl.dayRange" y="weatherCtrl.data.temperature"></wui-chart>
+    </div>
     <div class="col-sm-12" id="datacontainer">
-        <table class="table table-responsive">
+        <table class="table table-striped table-responsive">
             <tr>
                 <th>Hour</th>
                 <th ng-repeat="column in weatherCtrl.tableConfig.columnNames">

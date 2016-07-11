@@ -17,3 +17,7 @@ span.header-title{
 #mapcontainer{
     height: 450px;
 }
+
+.weatherchart{
+    height: 400px;
+}
