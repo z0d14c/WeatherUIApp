@@ -46,7 +46,8 @@ Simply type in a location address or name, select it, enter a date/time and view
     A production app needs significantly more error-handling, validation, notification of bad input, etc.
  
 ## Instructions
-`this notation means run this command from root directory (unless another directory is specified)`
+
+`this notation` means run this command from root directory (unless another directory is specified)
 * built on a system using node v4.4 *
 
 To install. (Need NPM and Bower, preferably latest stable versions)
