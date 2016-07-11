@@ -12,23 +12,20 @@ function getStates() {
     {
         state: 'weather',
         config: {
-            templateUrl: 'weatherPage/weather.html',
-            url: '/weather',
+            templateUrl: 'weather/weather.html',
+            url: '/weather/:location', //:location is a string LAT,LONG,TIME
             controller: 'WeatherController',
             controllerAs: 'weatherCtrl',
-            title: 'WeatherNerdzzz Weather Page'
+            title: 'WeatherNerdzzz Data Page',
+            resolve: {
+                'locationInfo': function(WeatherService, $stateParams) {
+                    return WeatherService.getWeatherData($stateParams.location).then(function(data) {
+                        return WeatherService.extractWeatherData(data.hourly.data);
+                    });
+                }
+            }
         }
     }
-    //{
-    //    state: 'weatherChart',
-    //    config: {
-    //        templateUrl: 'MainPage/main.html',
-    //        url: '/',
-    //        controller: 'MainController',
-    //        controllerAs: 'mainCtrl',
-    //        title: 'WeatherNerdzzz Main Page'
-    //    }
-    //}
     ];
 }
 })();

@@ -67,8 +67,8 @@ describe('MapService', function () {
                 _mapService.initializeMap('mapcontainer');
                 _mapService.setMap(100, 200, 300, 'testname');
                 var currentLocation = _mapService.getCurrentLocation();
-                expect(currentLocation.lat).toEqual(100);
-                expect(currentLocation.long).toEqual(200);
+                expect(currentLocation.long).toEqual(100);
+                expect(currentLocation.lat).toEqual(200);
                 expect(currentLocation.name).toEqual('testname');
             });
         });

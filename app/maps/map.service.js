@@ -1,5 +1,4 @@
 (function () {
-// store mapbox config variables here
     angular.module('app.maps')
         .service('MapService', MapService);
 
@@ -8,8 +7,8 @@
 
         // defaults to mi casa de Tejas
         var currentLocation = {
-            lat: -96.72958,
             long: 32.966519,
+            lat: -96.72958,
             name: '402 Vernet St'
         };
 
@@ -30,10 +29,10 @@
          * @function
          * @returns {Object} map object
          */
-        function _setMap(lat, long, zoom, name) {
+        function _setMap(long, lat, zoom, name) {
             map.setView([long, lat], zoom);
-            currentLocation.lat = lat;
             currentLocation.long = long;
+            currentLocation.lat = lat;
             currentLocation.name = name;
             _setTiles();
         }
@@ -71,7 +70,7 @@
                 .then(function (foundLocs) {
                     var found = foundLocs.features[0];
                     var coordinates = found.center;
-                    _setMap(coordinates[0], coordinates[1], 13, location);
+                    _setMap(coordinates[1], coordinates[0], 13, location);
                 });
         }
 

@@ -10,8 +10,9 @@ module.exports = function(config) {
 
     files: [].concat(
         bowerFiles,
-        'app/lib/*.js',
         'app/**/*.module.js',
+        'app/lib/leaflet.js',
+        'app/app.js',
       'app/**/*.js'
     ),
 

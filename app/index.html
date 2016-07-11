@@ -9,6 +9,7 @@
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
     <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
     <!-- build:css styles/lib.css -->
     <!-- bower:css -->
@@ -32,6 +33,7 @@
   <wui-header></wui-header>
   <div id="maincontainer" class="container" ui-view></div>
 
+  <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
   <!-- build:js js/lib.js -->
   <!-- bower:js -->
   <script src="../bower_components/angular/angular.js"></script>
@@ -44,29 +46,32 @@
   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  <script src="../bower_components/moment/moment.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js js/lib.js -->
   <!-- inject:js -->
   <script src="core/core.module.js"></script>
-  <script src="mainPage/main.module.js"></script>
+  <script src="main/main.module.js"></script>
   <script src="maps/map.module.js"></script>
-  <script src="weatherPage/weather.module.js"></script>
+  <script src="weather/weather.module.js"></script>
   <script src="app.js"></script>
   <script src="core/core.routerHelperProvider.js"></script>
   <script src="core/core.routes.js"></script>
   <script src="layout/header.directive.js"></script>
+  <script src="lib/leaflet.constant.js"></script>
   <script src="lib/leaflet.js"></script>
-  <script src="mainPage/main.controller.js"></script>
-  <script src="mainPage/main.routes.js"></script>
-  <script src="maps/leaflet.constant.js"></script>
+  <script src="lib/moment.constant.js"></script>
+  <script src="main/main.controller.js"></script>
+  <script src="main/main.routes.js"></script>
   <script src="maps/map.resource.js"></script>
   <script src="maps/map.service.js"></script>
   <script src="maps/mapbox.constant.js"></script>
-  <script src="weatherPage/weather.controller.js"></script>
-  <script src="weatherPage/weather.routes.js"></script>
+  <script src="weather/weather.controller.js"></script>
+  <script src="weather/weather.resource.js"></script>
+  <script src="weather/weather.routes.js"></script>
+  <script src="weather/weather.service.js"></script>
   <!-- endinject -->
   <!-- endbuild -->
-  <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
 </body>
 </html>

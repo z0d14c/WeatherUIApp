@@ -1,1 +1,19 @@
-<div>WEATHERPOOPYDOOPYSCHMOOPY</div>
+<div>
+    
+    <div class="col-sm-12" id="chartcontainer"></div>
+    <span>{{weatherCtrl.tableConfig.fieldValues}}</span>
+    <div class="col-sm-12" id="datacontainer">
+        <table class="table table-responsive">
+            <tr>
+                <th>Hour</th>
+                <th ng-repeat="column in weatherCtrl.tableConfig.columnNames">
+                    {{column}}
+                </th>
+            </tr>
+            <tr ng-repeat="hour in weatherCtrl.dayRange">
+                <td>Hour: {{hour}}</td>
+                <td ng-repeat="field in weatherCtrl.tableConfig.columnKeys">{{weatherCtrl.data[field][hour]}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

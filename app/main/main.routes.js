@@ -12,7 +12,7 @@
             {
                 state: 'main',
                 config: {
-                    templateUrl: 'MainPage/main.html',
+                    templateUrl: 'main/main.html',
                     url: '/',
                     controller: 'MainController',
                     controllerAs: 'mainCtrl',

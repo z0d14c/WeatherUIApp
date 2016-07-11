@@ -1,9 +1,16 @@
 /* app css stylesheet */
 
 /* general styles (for main container etc.) */
+body{
+    font-family: 'Prompt', sans-serif;
+}
 
 #maincontainer{
     padding-top: 100px;
+}
+
+span.header-title{
+    font-size: 30px;
 }
 
 /* map styles */
