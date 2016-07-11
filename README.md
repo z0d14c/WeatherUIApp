@@ -66,11 +66,11 @@ To build (wire up new css/js files, including Bower dependencies)
 Some other documentation was created in support of this project.
 *Note: not necessarily adhered to 100%*
 * [Requirements](https://docs.google.com/document/d/1bTILx4aro_pBGEOFRyUbwKcp_GYmE1MPYEVDo6blY9Q/edit?usp=sharing)
-* [Wireframes]()
+* [Wireframes](https://www.lucidpress.com/invitations/accept/b5652180-7078-47ef-98a3-eb7ea5d49200)
 
 ## Screenshots
 
 ![](http://i.imgur.com/oyZBBBb.png)
-![](https://www.lucidpress.com/invitations/accept/b5652180-7078-47ef-98a3-eb7ea5d49200)
+![](http://i.imgur.com/Djqi7PG.png)
 
 
